@@ -47,11 +47,6 @@ body{
     margin:  0px 0px 0px 0px;
     padding: 0px 10px ;
 }
-.logo {
-    margin-left: 0px;
-    padding-left: 0px 
-}
-
 
 figure{
     margin: 0px;   
@@ -64,10 +59,6 @@ ul{
     height: inherit;
     
 }
-
-
-
-
 h1,
 h3,
 h2,
@@ -121,7 +112,9 @@ h2{
     height: inherit;
     object-fit: cover;
 }
-
+.hero-image img{
+    object-fit: cover;
+}
 
 .portfolio{
     background-color: #fafafa;
@@ -177,17 +170,18 @@ height: 300px;
     font-family:'Fjalla One',sans-serif; 
 }
 .event-title{
-    margin-left: 30px;
+    margin-left: 0px;
 }
 .event{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     /* margin-left: 25px; */
 
 }
 .event-article{
     border: 1px;
-    margin: 10px;
+    margin: 0px 0px 10px 0px;
     width: 480px;
     border-radius:5px;
     overflow: hidden;
