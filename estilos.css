@@ -12,6 +12,7 @@ celeste = #026fff*/
 body{ 
    font-family: 'Source Sans Pro',sans-serif;
    margin: 0;
+   width: 1000px;
 }
 
 .header{
@@ -123,11 +124,10 @@ h2{
 }
 
 .project{
-border: 10px solid;
-border-color: gray;
-border-width: 3px;
+border: 1px solid gray;
+/* border-color: gray; */
+/* border-width: 3px; */
 border-radius: 10px;
-
 margin-bottom: 10px;
 display: flex;
 align-items: center;
