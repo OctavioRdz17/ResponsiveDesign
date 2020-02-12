@@ -12,7 +12,7 @@ celeste = #026fff*/
 body{ 
    font-family: 'Source Sans Pro',sans-serif;
    margin: 0;
-   width: 1000px;
+   /* width: 1000px; */
 }
 
 .header{
@@ -21,6 +21,7 @@ body{
     justify-content: space-between;
     height: 70PX;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 
@@ -96,7 +97,7 @@ h2{
     text-transform: uppercase;
 }
 .hero{
-    height: 300px;
+    /* height: 300px; */
     /* background-image: url('./images/hero.jpg'); */
     background-color:#1D252C ;
     /* background-size: 500px,300px; */
@@ -106,6 +107,7 @@ h2{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 
 }
 .hero-image{
@@ -132,7 +134,8 @@ margin-bottom: 10px;
 display: flex;
 align-items: center;
 justify-content: space-between;
-height: 300px;
+/* height: 300px; */
+flex-wrap: wrap;
 }
 
 .project-title{
@@ -153,7 +156,7 @@ height: 300px;
     height: 30px;
 }
 .project-details{
-    width: 500px;
+    max-width: 500px;
     margin-left: 10px;
 }
 .project-imageConteiner{
@@ -163,7 +166,8 @@ height: 300px;
 }
 
 .project-image{
-    max-height: 100%;
+    max-height: 40vh;
+    max-width: 100vw;
     
 }
 .project strong{
@@ -231,7 +235,7 @@ height: 200px;
     background-color: #1D252C;
     color: white;
     height: 60px;
-    
+    flex-wrap: wrap;
 
 }
 .footer figure{
@@ -260,6 +264,7 @@ height: 200px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .social{
@@ -275,19 +280,19 @@ height: 200px;
 }
 
 .social-link.facebook{
-    background-image: url(./images/facebook.svg);
+    background-image: url(../images/facebook.svg);
     
 }
 .social-link.twitter{
-    background-image: url(./images/twitter.svg);
+    background-image: url(../images/twitter.svg);
     
 }
 .social-link.instagram{
-    background-image: url(./images/instagram.svg);
+    background-image: url(../images/instagram.svg);
     
 }
 .social-link.github{
-    background-image: url(./images/github.svg);
+    background-image: url(../images/github.svg);
     
 }
 
@@ -321,7 +326,8 @@ height: 200px;
 
 .conteiner{
     /* border: 1px solid red; */
-    width: 1000px;
+    /* width: 1000px; */
+    max-width: 1000px;
     margin: 0 auto;
     display: inherit;
     justify-content: inherit;
@@ -329,3 +335,20 @@ height: 200px;
     height: inherit;
     flex-wrap: inherit;
 }
+
+
+/* desktop first empieces desde el Mq mas grande */
+
+@media screen and (max-width:1024){
+
+}
+@media screen and (max-width:768){
+
+}
+@media screen and (max-width:480){
+
+}
+@media screen and (max-width:320){
+
+}
+
