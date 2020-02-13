@@ -11,6 +11,7 @@
 </head>
 
 <body>
+    <span class="icon-menu burger-button" id="burger-menu"> </span>
     <header class="header">
 
         <div class="conteiner">
@@ -19,7 +20,7 @@
             </figure>
 
 
-            <nav class="menu">
+            <nav class="menu ">
                 <ul class="menu-list">
                     <li class="menu-list-link">
                         <a href="#SeccionPortafolio">Portaforlio </a>
@@ -36,7 +37,7 @@
 
     </header>
 
-        <section class="hero">
+    <section class="hero">
         <div class="conteiner">
 
             <h1>
@@ -97,7 +98,7 @@
         </div>
 
     </section>
-    
+
     <div class="conteiner">
         <h2 class="event-title">Más sobre mi experiencia</h2>
     </div>
@@ -119,7 +120,7 @@
             </article>
             <article class="event-article">
                 <figure class="event-imageContainer">
-                    <img class="event-image" src="images/platica2.jpg" alt="imasgendelevento.jpg" >
+                    <img class="event-image" src="images/platica2.jpg" alt="imasgendelevento.jpg">
                 </figure>
                 <div class="event-details">
                     <h3 class="event-subtitle">PlatziConf México 2018</h3>
@@ -133,7 +134,13 @@
             </article>
             <article class="event-article">
                 <figure class="event-imageContainer">
-                    <img class="event-image" src="images/triatleta.jpg" alt="imasgendelevento.jpg">
+                    <div class="flexible-video">
+                        <iframe class="youtube-video" width="560" height="315"
+                            src="https://www.youtube.com/embed/KAYt8ZeH8Jc" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <!-- <img class="event-image" src="images/triatleta.jpg" alt="imasgendelevento.jpg"> -->
                 </figure>
                 <div class="event-details">
                     <h3 class="event-subtitle">PlatziConf México 2018</h3>
@@ -192,6 +199,30 @@
             Designed with love by <a href='http://www.twitter.com/thespianartist' target="_blank"> @thespianartist </a>
         </div>
     </footer>
+    <script>
+        var ipad = window.matchMedia('screen and (max-width:767px)');
+        const menu = document.querySelector('.menu');
+        const burgerButton = document.querySelector('#burger-menu');
+
+        ipad.addListener(validation);
+
+        function validation(event) {
+            if (event.matches) {
+                burgerButton.addEventListener('click', hideShow);
+            }else{
+                burgerButton.removeEventListener('click', hideShow);
+            }
+        }
+        function hideShow() {
+            if (menu.classList.contains('is-active')) {
+                menu.classList.remove('is-active');
+            }
+            else {
+                menu.classList.add('is-active');
+            }
+        }
+
+    </script>
 </body>
 
 </html>
